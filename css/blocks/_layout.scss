@@ -18,14 +18,7 @@ body {
     overflow: hidden;
 }
 
-section {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-}
-
 .container {
-    //@include flexColBetween;
     max-width: $containerWidth;
     height: 100%;
     margin: 0 auto;

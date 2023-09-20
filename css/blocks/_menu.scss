@@ -1,12 +1,11 @@
 .menu {
+    margin-left: 46px;
     border: 1px solid #fff;
 }
 
 .menu__list {
     display: flex;
     align-items: center;
-    margin-left: 46px;
-    justify-content: space-between;
 }
 
 .menu__item {
@@ -18,5 +17,5 @@
 }
 
 .menu__link {
-    text-decoration: none; //?
+    text-decoration: none;
 }

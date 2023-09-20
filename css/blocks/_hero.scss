@@ -1,10 +1,9 @@
 .hero {
-    margin-top: 0;
     padding-top: 2.1%;
     padding-bottom: 6%;
-    box-sizing: border-box;
-    width: 100vw;
-    background-image: url('./../../images/hero/bg.png');
+    height: 100vh;
+    min-height: 652px;
+    background: url('./../../images/hero/bg.png');
     background-repeat: no-repeat;
     background-size: cover; 
     color: #fff;
