@@ -1,27 +1,5 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     font-weight: 600;
-}
-
-.header__address {
-    display: flex;
-    align-items: center;
-    margin-left: 45px;
-}
-
-.address__logo__container {
-    @include flexColAround;
-}
-
-.address__logo {
-    width: 12.9px;
-    height: 13.78px;
-    line-height: 39.26px;
-}
-
-.phone-number {
-    font-size: 22px;
-    font-weight: bold;
 }
