@@ -177,20 +177,13 @@ img {
 }
 
 .hero__title-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   width: 53%;
-  border: 1px solid #fff;
+  margin-top: 7%;
+  margin-bottom: 18px;
 }
 
 .hero__main-title {
+  margin-bottom: 18px;
   font-size: 48px;
   line-height: 58px;
   font-weight: bold;
@@ -198,6 +191,7 @@ img {
 }
 
 .hero__title-description {
+  margin-bottom: 39px;
   font-weight: 400;
   font-size: 21px;
 }
@@ -210,8 +204,8 @@ img {
   border-radius: 100px;
   background: #FEDB3F;
   border-style: none;
-  width: 156px;
-  height: 60px;
+  min-width: 156px;
+  min-height: 60px;
 }
 
 .hero__icons-container {
