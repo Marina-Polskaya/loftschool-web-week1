@@ -8,19 +8,15 @@
 html {
   height: 100%;
   font-size: 18px;
-  font-weight: 400;
 }
 
 body {
-  position: relative;
   height: 100%;
-  font-size: 18px;
   font-family: "Alegreya Sans";
   font-weight: 400;
 }
 
 .wrapper {
-  position: relative;
   min-width: 940px;
   min-height: 100%;
   overflow: hidden;
@@ -212,31 +208,23 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 486px;
-  height: 41px;
-  border: 1px solid #fff;
 }
 
 .hero__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 142px;
-  height: 41px;
+  margin-right: 30px;
+}
+.hero__icons:last-child {
+  margin-right: 0;
 }
 
 .hero__icon {
   width: 41px;
   height: 41px;
+  overflow: hidden;
+  margin-right: 11px;
 }
 
 .hero__icon-description {

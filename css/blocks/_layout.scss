@@ -1,18 +1,17 @@
 html {
     height: 100%;
     font-size: 18px;
-    font-weight: 400;
 }
 body {
-    position: relative;
+    //position: relative;
     height: 100%;
-    font-size: 18px;
+    //font-size: 18px;
     font-family: 'Alegreya Sans';
     font-weight: 400;
 }
 
 .wrapper {
-    position: relative;
+    //position: relative;
     min-width: $containerWidth;
     min-height: 100%;
     overflow: hidden;
