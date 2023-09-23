@@ -3,22 +3,22 @@ html {
     font-size: 18px;
 }
 body {
-    //position: relative;
+    position: relative;
     height: 100%;
-    //font-size: 18px;
     font-family: 'Alegreya Sans';
     font-weight: 400;
 }
 
 .wrapper {
-    //position: relative;
-    min-width: $containerWidth;
+    position: relative;
+    width: 100%;
+    min-width: $containerWidth + 20px;
     min-height: 100%;
     overflow: hidden;
 }
 
 .container {
-    max-width: $containerWidth;
+    width: $containerWidth;
     height: 100%;
     margin: 0 auto;
 }

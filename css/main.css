@@ -11,19 +11,22 @@ html {
 }
 
 body {
+  position: relative;
   height: 100%;
   font-family: "Alegreya Sans";
   font-weight: 400;
 }
 
 .wrapper {
-  min-width: 940px;
+  position: relative;
+  width: 100%;
+  min-width: 960px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  max-width: 940px;
+  width: 940px;
   height: 100%;
   margin: 0 auto;
 }
@@ -235,8 +238,45 @@ img {
   font-weight: 700;
 }
 
-.why {
-  padding: 64px 0;
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 9.5%;
+  padding-bottom: 6%;
+  height: 100vh;
+  min-height: 652px;
+}
+
+.section__title {
+  margin-bottom: 31px;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.headline {
+  margin-bottom: 17px;
+}
+
+.headline__title {
+  margin-bottom: 17px;
+}
+
+.headline__subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  width: 46%;
+  text-align: center;
+  line-height: 22px;
+  color: #666666;
 }
 
 .why__title-container {
