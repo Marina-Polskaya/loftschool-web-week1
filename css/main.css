@@ -249,8 +249,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 9.5%;
-  padding-bottom: 6%;
+  padding-top: 5.7%;
+  padding-bottom: 5.7%;
   height: 100vh;
   min-height: 652px;
 }
@@ -264,6 +264,7 @@ img {
 
 .headline {
   margin-bottom: 17px;
+  text-align: center;
 }
 
 .headline__title {
@@ -273,10 +274,53 @@ img {
 .headline__subtitle {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 49px;
   width: 46%;
-  text-align: center;
   line-height: 22px;
   color: #666666;
+}
+
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.benefits_item {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 30px;
+}
+.benefits_item:first-child {
+  margin-left: 0;
+}
+.benefits_item:last-child {
+  margin-right: 0;
+}
+.benefits_item:before {
+  content: url("./../../../images/why/points.svg");
+  position: absolute;
+  width: 67px;
+  height: 21px;
+  top: 56px;
+  right: -60px;
+}
+
+.benefit {
+  text-align: center;
+}
+
+.benefit__image {
+  width: 128px;
+  height: 122px;
+  background-color: #F2F5F4;
+  border-radius: 50%;
+}
+
+.benefit__icon {
+  margin: 20px auto;
 }
 
 .why__title-container {
@@ -307,90 +351,8 @@ img {
   line-height: 22px;
 }
 
-.why__benefits {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 auto 22px auto;
-  width: 942px;
-  height: 267px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.benefits__item {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 279px;
-  height: 267px;
-}
-.benefits__item:before {
-  content: url("./../../../images/why/points.svg");
-  position: absolute;
-  width: 67px;
-  height: 21px;
-  top: 56px;
-  right: -60px;
-}
-.benefits__item:last-child::before {
-  display: none;
-}
-
-.benefits__image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 0 auto;
-  width: 128px;
-  height: 122px;
-  background-color: #F2F5F4;
-  border-radius: 50%;
-}
-
-.benefits__icon {
-  margin: 0 auto;
-}
-
-.benefits__title {
-  width: 276px;
-  height: 32px;
-  text-align: center;
-  font-size: 27px;
-  color: #292929;
-}
-
-.benefits__description {
-  margin: 0;
-  margin-bottom: 4px;
-  text-align: center;
-  width: 279px;
-  height: 66px;
-  line-height: 22px;
-  font-weight: 300;
-  color: #666;
+.why {
+  padding-top: 9.5%;
 }
 
 .reviews {

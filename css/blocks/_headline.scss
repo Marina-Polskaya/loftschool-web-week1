@@ -1,5 +1,6 @@
 .headline {
     margin-bottom: 17px;
+    text-align: center;
 }
 
 .headline__title {
@@ -9,8 +10,8 @@
 .headline__subtitle {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 49px;
     width: 46%;
-    text-align: center;
     line-height: 22px;
     color: $descTextColor;
 }
