@@ -86,12 +86,12 @@
                     </ul>
                 </div>
             </section>
-            <div class="boards-slider">
+            <!-- <div class="boards-slider">
             </div>
             <section class="section">
             </section>
             <section class="section">
-            </section>
+            </section> -->
             <section class="section">
                 <div class="container">
                     <h2 class="section__title">ОТЗЫВЫ</h2>
@@ -129,39 +129,13 @@
                                 </a>
                             </li>
                         </ul>
-                            <!-- <article class="reviews__article">
-                                <h3 class="reviews__aticle__title">Лучший дизайн</h3>
-                                <p class="reviews__text">Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
-                                </p>
-                                <div class="reviews__author">Ольга Макарова</div>
-                            </article>
-                        </div>
-                        <ul class="reviews__content__bottom">
-                            <li class="reviews__icon-item interractive-avatar">
-                                <a href="" class="interractive-avatar__link">
-                                    <img src="./images/reviews/reviews1.png" alt="" class="interractive-avatar__img">
-                                </a>
-                            </li>
-                            <li class="reviews__icon-item interractive-avatar">
-                                <a href="" class="interractive-avatar__link">
-                                    <img src="./images/reviews/reviews2.png" alt="" class="interractive-avatar__img">
-                                </a>
-                            </li>
-                            <li class="reviews__icon-item interractive-avatar">
-                                <a href="" class="interractive-avatar__link">
-                                    <img src="./images/reviews/reviews3.png" alt="" class="interractive-avatar__img">
-                                </a>
-                            </li>
-                        </ul> -->
                     </div>
                 </div>
             </section>
-            <section class=" section how"></section>
-            <section>
-                <div class="container order-form">
-                    <div class="title order-form__title">
-                        <h2>ЗАКАЖИТЕ ДОСКУ</h2>
-                    </div>
+            <!-- <section class="section how"></section> -->
+            <section class="section order-form">
+                <div class="container">
+                    <h2 class="section__title order-form__title">ЗАКАЖИТЕ ДОСКУ</h2>
                     <form action="" id="order-form" class="form" method="post">
                         <div class="form__column">
                             <div class="form__row">
@@ -200,38 +174,42 @@
                             </div>
                         </div>
                         <div class="form__column">
-                            <div class="form__row">
-                                <div class="form__cell">
-                                    <label for="comment" class="form__label">Комментарий</label>   
-                                    <textarea name="comment" cols="30" rows="7" class="form__textarea" id="comment"></textarea>
-                                </div>
-                            </div>
-                            <div class="form__payment-box">
-                                <div class="form__row-payment">
-                                    <div class="form__cell-payment">
-                                        <input class="order__radio-hide" name="payment-cash" type="radio" id="payment-cash"/>
-                                        <div class="order__radio-visible"></div>
-                                        <label for="payment-cash" class="order__radio">Оплата наличными</label>
-                                    </div>
-                                    <div class="form__cell-payment">
-                                        <input class="order__radio-hide" name="payment-card" type="radio" id="payment-card"/>
-                                        <div class="order__radio-visible"></div>
-                                        <label for="payment-cash" class="order__radio">Оплата картой</label>
+                            <div class="form__column-add-info"> 
+                                <div class="form__row">
+                                    <div class="form__cell">
+                                        <label for="comment" class="form__label">Комментарий</label>
+                                        <textarea name="comment" cols="46" rows="7" class="form__textarea" id="comment"></textarea>
                                     </div>
                                 </div>
-                                <div class="form__row-payment">
-                                    <div class="form__cell-payment form__cell-payment-check">
-                                        <input class="order__radio-hide" name="dontCall" type="radio" id="dontCall"/>
-                                        <div class="order__check-visible"><img src="./images/order-form/checkmark.svg" alt="" class="order__chech-img"></div>
-                                        <label for="dontCall" class="order__radio">Не перезванивать</label>
+                                <div class="payment-box">
+                                    <div class="payment-box__row">
+                                        <div class="payment-box__column">
+                                            <input class="payment-box__radio-hide" name="payment-cash" type="radio" id="payment-cash" />
+                                            <div class="payment-box__radio-visible"></div>
+                                            <label for="payment-cash" class="payment-box__label">Оплата наличными</label>
+                                        </div>
+                                        <div class="payment-box__column">
+                                            <input class="payment-box__radio-hide" name="payment-card" type="radio" id="payment-card" />
+                                            <div class="payment-box__radio-visible"></div>
+                                            <label for="payment-card" class="payment-box__label">Оплата картой</label>
+                                        </div>
                                     </div>
-                                    <div class="form__cell-payment form__cell-payment-check">
+                                    <div class="payment-box__row">
+                                        <div class="payment-box__column">
+                                            <input class="payment-box__radio-hide" name="dontCall" type="radio" id="dontCall" />
+                                            <div class="payment-box__check-visible">
+                                                <img src="./images/order-form/checkmark.svg" alt="" class="payment-box__check-img">
+                                            </div>
+                                            <label for="dontCall" class="payment-box__label">Не перезванивать</label>
+                                        </div>
+                                        <div class="payment-box__column">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="form__button-container">
-                                <button class="button">ЗАКАЗАТЬ</button>
-                                <a href="" class="form__clear">Очистить</a>
+                                <button class="button" type="submit">ЗАКАЗАТЬ</button>
+                                <button class="button__clear" type="reset">Очистить</button>
                             </div>
                         </div>
                     </form>                    
