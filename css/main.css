@@ -263,7 +263,7 @@ img {
 }
 
 .headline {
-  margin-bottom: 17px;
+  margin-bottom: 49px;
   text-align: center;
 }
 
@@ -274,7 +274,6 @@ img {
 .headline__subtitle {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 49px;
   width: 46%;
   line-height: 22px;
   color: #666666;
@@ -286,20 +285,23 @@ img {
   display: flex;
 }
 
-.benefits_item {
+.benefits__item {
   position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: 30px;
+  margin: 0 26px;
 }
-.benefits_item:first-child {
+.benefits__item:first-child {
   margin-left: 0;
 }
-.benefits_item:last-child {
+.benefits__item:last-child {
   margin-right: 0;
 }
-.benefits_item:before {
+.benefits__item:last-child::before {
+  display: none;
+}
+.benefits__item:before {
   content: url("./../../../images/why/points.svg");
   position: absolute;
   width: 67px;
@@ -313,14 +315,36 @@ img {
 }
 
 .benefit__image {
+  position: relative;
+  display: inline-block;
   width: 128px;
-  height: 122px;
+  height: 128px;
   background-color: #F2F5F4;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .benefit__icon {
-  margin: 20px auto;
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.benefit__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 27px;
+  color: #292929;
+  font-weight: 700;
+}
+
+.benefit__description {
+  font-weight: 300;
+  color: #666666;
 }
 
 .why__title-container {
@@ -353,10 +377,6 @@ img {
 
 .why {
   padding-top: 9.5%;
-}
-
-.reviews {
-  padding: 34px 0;
 }
 
 .reviews__title-container {
